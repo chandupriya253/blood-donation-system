@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Blood Donation System</title>
+    <link rel="stylesheet" href="../css/admin.css"> <!-- Link to new CSS -->
+</head>
+<body>
+
+    <h2>Admin Dashboard</h2>
+
+    <div class="admin-container">
+        <section class="admin-section">
+            <h3>Registered Donors</h3>
+            <table id="donorTable">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Blood Group</th>
+                        <th>Email</th>
+                        <th>Location</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Donor data will appear here -->
+                </tbody>
+            </table>
+        </section>
+
+        <section class="admin-section">
+            <h3>Blood Requests</h3>
+            <table id="requestTable">
+                <thead>
+                    <tr>
+                        <th>Requester</th>
+                        <th>Blood Group</th>
+                        <th>Location</th>
+                        <th>Message</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Request data will appear here -->
+                </tbody>
+            </table>
+        </section>
+
+        <button onclick="logout()" class="logout-button">Logout</button>
+        <p><a href="index.html">Back to Home</a></p>
+
+    </div>
+
+    <script src="admin.js"></script> <!-- Link to new JS -->
+</body>
+</html>
+

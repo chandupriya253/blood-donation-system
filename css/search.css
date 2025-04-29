@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #AEE1F9, #61A6D7);
+    margin: 0;
+    padding: 20px;
+  }
+  
+  h2 {
+    text-align: center;
+    color: #000080;
+    margin-bottom: 30px;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    width: 40vw;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    font-family: Tahoma;
+  }
+  
+  .input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+    box-sizing: border-box;
+  }
+  
+  .submit {
+    margin-top: 20px;
+    width: 100%;
+    background-color: #000080;
+    color: white;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .submit:hover {
+    background-color: #003366;
+  }
+  
+  #results {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .result-card {
+    background: white;
+    padding: 20px;
+    width: 50vw;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px gray;
+  }
+  

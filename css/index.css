@@ -1,0 +1,61 @@
+body{
+    background: linear-gradient(to right, #AEE1F9, #61A6D7);
+    animation-name:color;
+    animation-duration:4s;
+    animation-iteration-count:3;
+
+}
+h1,h2{
+    text-align: center;
+    color:#000080;
+    font-family:roboto;
+
+}
+
+@keyframes color{
+    from {background: linear-gradient(to right, #AEE1F9, #61A6D7);}
+    to {background: linear-gradient(to right, #B0E0E6, #AEE1F9, #E0FFFF);
+    }
+}
+p{
+    text-align: center;
+    color: #000080;
+}
+.image{
+    width: 34vw;
+    height: 50vh;
+    margin-top: 10%;
+    border-radius: 30%;
+}
+.image1{
+    width: 5vw;
+    height: 5vh;
+    border-radius: 50%;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    align-content: space-evenly;
+    align-content: space-between;
+    justify-content: center;
+}
+.page{
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+.button{
+    padding:20px;
+    width: 30vw;
+    margin: 10%;
+    border-radius: 20px;
+    border-width: 0px;
+    font-size: 20px;
+    font-family:Tahoma;
+    text-align: center;
+    background-color: #000080;
+    color: white;
+
+}
+

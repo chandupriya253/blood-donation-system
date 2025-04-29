@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Blood Request Form</title>
+  <link rel="stylesheet" href="../css/request.css">
+</head>
+<body>
+  <h2>Request for Blood</h2>
+
+  <div class="container">
+    <form id="requestForm">
+      <label class="label">Requester Name *</label>
+      <input type="text" id="name" placeholder="Enter your name or hospital name" required class="input"/>
+
+      <label class="label">Email *</label>
+      <input type="email" id="email" placeholder="Enter your email" required class="input"/>
+
+      <label class="label">Blood Group Required *</label>
+      <select id="bloodGroup" required class="input">
+        <option value="">Select Blood Group</option>
+        <option value="O+">O+</option>
+        <option value="O-">O-</option>
+        <option value="A+">A+</option>
+        <option value="A-">A-</option>
+        <option value="B+">B+</option>
+        <option value="B-">B-</option>
+        <option value="AB+">AB+</option>
+        <option value="AB-">AB-</option>
+      </select>
+
+      <label class="label">Location *</label>
+      <input type="text" id="location" placeholder="Enter city or hospital location" required class="input"/>
+
+      <label class="label">Message (optional)</label>
+      <textarea id="message" placeholder="Add any additional info (urgency, condition, etc)" class="input" rows="4"></textarea>
+
+      <button type="submit" class="submit">Submit Request</button>
+      <p><a href="index.html">Back to Home</a></p>
+
+    </form>
+  </div>
+
+  <script src="request.js"></script>
+</body>
+</html>

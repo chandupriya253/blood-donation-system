@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Blood Donation</title>
+    <style>
+    body{
+    background: linear-gradient(to right, #AEE1F9, #61A6D7);
+    animation-name:color;
+    animation-duration:4s;
+    animation-iteration-count:3;
+    }
+    h2{
+    text-align: center;
+    color:#000080;
+    font-family:roboto;
+    font-size: 30px;
+    }
+    #registerForm{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    
+     
+    }
+    .register{
+        text-align: center;
+        background-color:white;
+        margin: 20px;
+        border-width: 2px;
+        justify-content: center;
+        width: 30vw;
+        padding: 20px;
+        border-radius: 10px;
+    }
+    ::placeholder {
+        color: black;
+    }
+    .form{
+        color: black;
+        font-family:Tahoma;
+        font-size: 20px;
+        font-weight: bold;
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+
+    }
+    .submit{
+        color: white;
+        background-color:#000080; 
+        width: 10vw;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    .container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .image{
+    width: 34vw;
+    height: 70vh;
+    margin-top: 30%;
+    border-radius: 50%;
+    }
+    sup {
+    vertical-align: super;
+}
+.blood{
+    padding: 20px;
+    width: 30vw;
+    border-radius: 10px;
+    background-color: white;
+}
+.error{
+    color: red;
+    font-family: roboto;
+    font-size: 15px;
+}
+    
+    </style>
+</head>
+<body>
+    
+    
+    <h2>Register as a Donor/Recipient</h2>
+    <div class="container">
+    <form id="registerForm">
+        <label class="form"> Name *</label>
+        <input type="text" id="name" placeholder="Full Name" required class="register"/>
+        <span id="nameError" class="error"></span>
+        <label class="form"> Email *</label>
+        <input type="email" id="email" placeholder="Email" required class="register"/>
+        <span id="emailError" class="error"></span>
+        <label class="form">Password *</label>
+        <input type="password" id="password" placeholder="Password" required class="register"/>
+        <span id="passwordError" class="error"></span>
+        <label class="form">Blood Group *</label>
+        <select id = "bloodGroup"name = "Blood Groups" class="blood">
+            <option value="Blood Group">Select Blood Group</option>
+            <option value="O+">O+</option>
+            <option value="O-">O-</option>
+            <option value="A+">A+</option>
+            <option value="A-">A-</option>
+            <option value="B+">B+</option>
+            <option value="B-">B-</option>
+            <option value="AB+">AB+</option>
+            <option value="AB-">AB-</option>
+        </select>
+        <span id="bloodGroupError" class="error"></span>
+        <label class="form">Location *</label>
+        <input type="text" id="location" placeholder="City" required class="register"/>
+        <span id="locationError" class="error"></span>
+        <button type="submit" class="submit" id="submit" onclick="submitForm()">Register</button>
+        <p>Already have an account? <a href="login.html">Login Here</a></p>
+        <p><a href="index.html">Back to Home</a></p>
+
+    </form>
+    <div>
+    <image src="https://www.wockhardthospitals.com/wp-content/uploads/2019/11/2971635-768x576-1.webp" class="image"/>
+</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
